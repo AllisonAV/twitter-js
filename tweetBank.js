@@ -1,9 +1,9 @@
 const _ = require('lodash');
 
 var data = [];
-
+var id=0;
 function add (name, content) {
-  data.push({ name: name, content: content });
+  data.push({ name: name, content: content, id: ++id});
 }
 
 function list () {
@@ -34,4 +34,22 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
+
+add('David', 'Hello');
+// console.log(list());
+ console.log('FIND', find({'id': '1'}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
