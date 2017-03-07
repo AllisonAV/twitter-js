@@ -41,6 +41,10 @@ code {
   font-size: 80%;
 }
 
+#tweetname {
+  font-weight: bold;
+}
+
 .tweetbox {
   padding: 7px;
 }
