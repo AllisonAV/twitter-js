@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyparser = require('body-parser');
 const volleyball = require('volleyball');
 const nunjucks = require('nunjucks');
 const routes = require('./routes');
@@ -45,9 +46,9 @@ app.use(volleyball);
 // 	next();
 // });
 
-app.get('/', function(req, res){
-	res.send('<h1>Welcome to our server!!<\/h1>');
-});
+// app.get('/', function(req, res){
+// 	res.send('<h1>Welcome to our server!!<\/h1>');
+// });
 
 // app.get('/news', function(req, res) {
 // 	res.send('<h1>News Headlines<\/h1>');
